@@ -1,7 +1,24 @@
 
 
-
-  h1{
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1{
   font-family: sans-serif;
   font-size: 300%;
   font-style: italic;
@@ -9,21 +26,22 @@
 }
   #curriculum {
     text-align: center;
+    text-decoration: underline;
     }
 
 
 li{
 list-style: square;
 }
-#destacada {
+#img{
   width: 220px;
   height: 260px;
-
-}
-#destacada {
-  border-style: double;
+	border-style: double;
   border-width: 8px
 }
+
+
+
 #menu {
   text-align: right;
 }
@@ -33,6 +51,8 @@ list-style: square;
 table {
    width: 100%;
    border: 1px solid #000;
+   border-width:2px;
+     border-style:groove;
 }
 th, td {
    width: 25%;
@@ -40,11 +60,16 @@ th, td {
    vertical-align: top;
    border: 1px solid #000;
    border-collapse: collapse;
+   border-width:2px;
+    border-style:groove;
 }
 #facebook {
   width: 50px;
   height: 50px;
-
+  }
+  #w3c{
+    width: 30px;
+    height: 30px;
 }
 #twitter {
   width: 50px;
@@ -61,17 +86,7 @@ th, td {
   height: 50px;
 
 }
-#contacta {
 
-    border-radius: 5px;
-    color: #5CD053;
-    display: block;
-    font-family: sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-shadow: 1px 1px 1px #CCCCCC;
-    width: 433px;
-}
 #listica {
   width:750px;
     list-style-type:none;
@@ -104,69 +119,15 @@ border-bottom:1px solid #eee;
 position:relative;
 }
 
- label{
-    color: #555555;
-    display: inline-block;
-    float: left;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 3px;
-    padding: 3px;
-    width: 90px;
-}
-input {
-	height:20px;
-	width:220px;
-	padding:5px 8px;
-  border:1px solid #aaa;
-	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-	border-radius:2px;
-	color: #888;
-	font-size: 12px;
-	padding-right:30px;
-	-moz-transition: padding .25s;
-	-webkit-transition: padding .25s;
-	-o-transition: padding .25s;
-	transition: padding .25s;
-}
-textarea {
-	padding:8px;
-	width:300px;
-  border:1px solid #aaa;
-	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-	border-radius:2px;
-	color: #888;
-	font-size: 12px;
-	padding-right:30px;
-	-moz-transition: padding .25s;
-	-webkit-transition: padding .25s;
-	-o-transition: padding .25s;
-	transition: padding .25s;
-}
-button {
-	margin-left:90px;
-}
-button { padding: 9px 17px;
-   font-family: Helvetica, Arial, sans-serif;
-   font-weight: bold;
-   line-height: 1;
-   color: #444;
-   border: none;
-   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
-   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
-   background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
-   background-color: #fff;
-   border: 1px solid #f1f1f1;
-   border-radius: 10px;
-   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
- }
- button.submit:hover {
-	opacity:.55;
-	cursor: pointer;
-	color: #fff;
-}
-button.submit:active {
-	border: 1px solid #222;
-	box-shadow: 0 0 10px 5px #444 inset;
+  #modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }

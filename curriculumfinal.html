@@ -7,11 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <title>Título de la página</title>
 <link rel="stylesheet" href="estilo.css" >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/dojo/1.11.3/dojo/dojo.js"></script>
+
 <script src="estilojava.js"> </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -43,13 +42,18 @@
 
   <div class="container">
     <h1 id="contenedor"> CURRICULUM VITAE </h1>
-    <img id="destacada" src="http://estaticos03.tiramillas.net/imagenes/2015/10/09/television/1444379243_extras_ladillos_1_0.jpg" alt="imagen del perfil ">
+    <img id="img" src="http://estaticos03.tiramillas.net/imagenes/2015/10/09/television/1444379243_extras_ladillos_1_0.jpg" alt="imagen del perfil ">
+    <button  type="button"  id="decr">-</button>
+<button  type="button"  id="incr">+</button>
     <p id="menu">
       Numero de telefono: 91440982 <br>
       Movil:628676177 <br>
       email: adrianmasteresri93@gmail.com <br>
       Calle Monteleón 24
     </p>
+    <p> Soy licenciado en Geografia y Ordenacion del Territorio reconvertido a desarrollador GIS enfocado al diseño de aplicaciones web.<br>
+      Me encanta todo lo relacionado con la programación, y con los sistemas de información geográfica. <br>
+      Me apasionan los temas de BigData y Periodismo de datos e intento aprovechar todo el poder de los GIS para aplicarlo a estos campos. </p>
     <hr>
    <h2 id="experiencia">Experiencia profesional</h2>
 
@@ -82,11 +86,39 @@
     </table>
     <hr>
   <h2 id="habilidades">Habilidades y conocimientos</h2>
+  <div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    Desarrollo web
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+    Bases de datos
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    desarrollo app
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    Sistemas de Información geográfica
+  </div>
+</div>
     <ul>
       <li><strong>Desarrollo web:</strong> HTML5, CSS3, JavaScript, Python</li>
-      <li><strong>Sistemas de Información geográfica:</strong> ArcMap, Arcgis Online, Argis Server, Arcgis Pro. </li>
-      <li><strong> desarrollo app: </strong> Model Builder</li>
       <li><strong> Bases de datos : </strong> SQLExpress, Geodatabase Multiusuario</li>
+      <li><strong> desarrollo app: </strong> Model Builder</li>
+      <li><strong>Sistemas de Información geográfica:</strong> ArcMap, Arcgis Online, Argis Server, Arcgis Pro. </li>
+
     </ul>
     <hr>
     <h2 id= "educacion"> Educacion </h2>
@@ -122,7 +154,7 @@
      <ul>
       <li> <a href="http://www.Facebook.com"><img id="facebook" src="https://www.facebook.com/images/fb_icon_325x325.png" alt="imagen logo del facebook"></a></li>
       <li> <a href="http://www.linkedin.com"><img id="linkedin" src="https://brand.linkedin.com/etc/designs/linkedin/katy/global/clientlibs/img/default-share.png" alt="imagen logo de linkedin"></a></li>
-       <li> <a href="http://www.twitter.com"><img id="twitter" src="https://pbs.twimg.com/profile_images/767879603977191425/29zfZY6I.jpg"  alt="imagen logo del twitter"></a></li>
+       <li> <a href="http://www.twitter.com"><img id="twitter" src="http://cdn2.business2community.com/wp-content/uploads/2014/11/543c477e9547e.jpg.jpg"  alt="imagen logo del twitter"></a></li>
        <li> <a href="http://www.skype.com"><img id="skype" src="http://www.altag.net/wp-content/uploads/2015/06/skype.jpg" alt="imagen logo de skype"></a></li>
     </ul>
     <hr>

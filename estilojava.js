@@ -1,24 +1,7 @@
 'use strict';
 
 
-  // Le añado un listener (o disparador), cuando se haga click
-  require([
-          "dojo/dom",
-          "dojo/on",
-          "dojo/fx",
-          "dojo/domReady!"
-        ],function(dom, on, fx){
-          var el = dom.byId("contenedor");
-          el.innerHTML = "Haz clic!";
-          // Establecemos el nodo sobre el que se realizará el evento, el tipo de evento
-          // y la función que desencadena
-          on(el, "click", function(evt){
-            fx.slideTo({
-              node: el,
-              top: 100,
-              left:300
-            }).play();
-          });
+
 
   var $win = $(window),
       w = 0,h = 0,
@@ -39,3 +22,16 @@
       $(document.body).css('background','rgb('+rgb.join(',')+')');
 
   }).resize();
+  $(function(){
+  var img  = $('#img');
+
+  $('#incr').on('click', function(){
+  	img.width(img.width()*1.1);
+  	img.height(img.height()*1.1);
+  });
+
+  $('#decr').on('click', function(){
+  	img.width(img.width()/1.1);
+  	img.height(img.height()/1.1);
+  });
+});
